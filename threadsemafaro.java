@@ -31,7 +31,7 @@ public class threadsemafaro implements Runnable {
 		}
 	}
 	
-	synchronized void mudarCor(){
+	 private synchronized void mudarCor(){
 		switch (this.cor) {
 		case VERMELHO:
 			this.cor = Colors.VERDE;
